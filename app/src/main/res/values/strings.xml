@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Excels Diary</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_client_details">Client Details</string>
+</resources>

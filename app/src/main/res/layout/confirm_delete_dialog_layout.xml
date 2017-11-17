@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="Are you sure you want to delete?"
+        android:textAlignment="center"
+        android:id="@+id/title"
+        android:padding="10dp" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+        <TextView
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:padding="5dp"
+            android:drawableLeft="@android:drawable/ic_menu_close_clear_cancel"
+            android:gravity="center_vertical|center_horizontal"
+            android:background="@drawable/btn_bg"
+            android:layout_alignParentLeft="true"
+            android:clickable="true"
+            android:focusable="true"
+            android:id="@+id/cancel"
+            android:textColor="#ffffff"
+            android:maxWidth="130dp" />
+        <TextView
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:text="Delete"
+            android:id="@+id/Delete"
+            android:padding="5dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:drawableLeft="@android:drawable/ic_menu_delete"
+            android:background="@drawable/btn_bg"
+            android:layout_alignParentRight="true"
+            android:clickable="true"
+            android:focusable="true"
+            android:textColor="#ffffff"
+            android:maxLength="10"
+            android:maxWidth="130dp" />
+    </RelativeLayout>
+
+</LinearLayout>

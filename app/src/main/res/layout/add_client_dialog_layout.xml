@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/kent3"
+        android:scaleType="centerCrop" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/dbg"
+        android:scaleType="centerCrop" />
+
+    <LinearLayout
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="Add New Client"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:padding="10dp"
+        android:background="@color/colorPrimaryDark" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/etClientName"
+        android:hint="client name"
+        android:background="@drawable/edit_text_bg"
+        android:layout_margin="10dp"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:inputType="phone"
+        android:ems="10"
+        android:id="@+id/etClientTelephone"
+        android:hint="client telephone"
+        android:background="@drawable/edit_text_bg"
+        android:layout_margin="10dp"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff" />
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/imageView"
+        android:weightSum="1"
+        android:id="@+id/rgGender"
+        android:orientation="horizontal">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="male"
+            style="@style/radionbutton"
+            android:id="@+id/rbmale"
+            android:layout_gravity="center_horizontal"
+            android:checked="false"
+            android:textSize="18sp"
+            android:padding="10dp"
+            android:textColor="#ffffff" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="female"
+            style="@style/radionbutton"
+            android:id="@+id/rbfemale"
+            android:layout_gravity="center_horizontal"
+            android:checked="false"
+            android:textSize="18sp"
+            android:padding="10dp"
+            android:textColor="#ffffff" />
+    </RadioGroup>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+        <TextView
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:padding="5dp"
+            android:drawableLeft="@android:drawable/ic_menu_close_clear_cancel"
+            android:gravity="center_vertical|center_horizontal"
+            android:background="@drawable/btn_bg"
+            android:layout_alignParentLeft="true"
+            android:clickable="true"
+            android:focusable="true"
+            android:id="@+id/take_picture"
+            android:textColor="#ffffff"
+            android:maxWidth="130dp"
+            android:singleLine="true" />
+        <TextView
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:id="@+id/save"
+            android:padding="5dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:drawableLeft="@android:drawable/ic_menu_save"
+            android:background="@drawable/btn_bg"
+            android:layout_alignParentRight="true"
+            android:clickable="true"
+            android:focusable="true"
+            android:textColor="#ffffff"
+            android:maxLength="4"
+            android:maxWidth="130dp" />
+    </RelativeLayout>
+
+</LinearLayout>
+</FrameLayout>

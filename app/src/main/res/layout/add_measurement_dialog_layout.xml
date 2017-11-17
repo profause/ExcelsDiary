@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/kent3"
+        android:scaleType="centerCrop" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/dbg"
+        android:scaleType="centerCrop" />
+
+    <LinearLayout
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="Add or Edit Measurement"
+        android:textAlignment="center"
+        android:id="@+id/title"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff"
+        android:padding="10dp"
+        android:background="@color/colorPrimaryDark" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:inputType="text"
+        android:ems="10"
+        android:id="@+id/etName"
+        android:hint="body part"
+        android:background="@drawable/edit_text_bg"
+        android:layout_margin="10dp"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:id="@+id/etValue"
+        android:hint="measured value"
+        android:background="@drawable/edit_text_bg"
+        android:layout_margin="10dp"
+        android:inputType="number"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff" />
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/imageView"
+        android:weightSum="1"
+        android:id="@+id/rgUnit"
+        android:orientation="horizontal">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="cm"
+            style="@style/radionbutton"
+            android:id="@+id/rbcm"
+            android:layout_gravity="center_horizontal"
+            android:checked="false"
+            android:textSize="18sp"
+            android:padding="10dp"
+            android:textColor="#ffffff" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="inches"
+            style="@style/radionbutton"
+            android:id="@+id/rbinches"
+            android:layout_gravity="center_horizontal"
+            android:checked="false"
+            android:textSize="18sp"
+            android:padding="10dp"
+            android:textColor="#ffffff" />
+    </RadioGroup>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+        <TextView
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:padding="5dp"
+            android:drawableLeft="@android:drawable/ic_menu_close_clear_cancel"
+            android:gravity="center_vertical|center_horizontal"
+            android:background="@drawable/btn_bg"
+            android:layout_alignParentLeft="true"
+            android:clickable="true"
+            android:focusable="true"
+            android:id="@+id/cancel"
+            android:textColor="#ffffff"
+            android:maxWidth="130dp" />
+        <TextView
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:id="@+id/save"
+            android:padding="5dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:drawableLeft="@android:drawable/ic_menu_save"
+            android:background="@drawable/btn_bg"
+            android:layout_alignParentRight="true"
+            android:clickable="true"
+            android:focusable="true"
+            android:textColor="#ffffff"
+            android:maxLength="4"
+            android:maxWidth="130dp" />
+    </RelativeLayout>
+</LinearLayout>
+    </FrameLayout>
